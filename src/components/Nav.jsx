@@ -31,20 +31,20 @@ const Nav = ({ openAccordion, setOpenAccordion }) => {
           </a>
         </li>
         <li>
-          <a
-            href=""
+          <Link
+            to="/login-page"
             className="p-1 px-4 border-solid border-2 border-white rounded-full font-mono font-black text-lg hover:bg-cyan-900 hover:border-cyan-900 focus:bg-cyan-900 focus:border-cyan-900"
           >
-            Join Us
-          </a>
+            Login
+          </Link>
         </li>
         <li>
-          <a
-            href=""
-            className="p-2 px-4 border-solid border-2 border-cyan-800 bg-cyan-800 hover:bg-white hover:text-gray-900 hover:border-white focus:bg-white focus:border-white focus:text-gray-900 hidden lg:block"
+          <Link
+            to="/register-page"
+            className="p-2 px-4 border-solid border-2 border-cyan-800 bg-cyan-800 hover:bg-cyan-900 focus:bg-bg-cyan-900 focus:border-cyan-900 hidden lg:block"
           >
-            Donate Now
-          </a>
+            Sign Up
+          </Link>
         </li>
         <li className="lg:hidden" onClick={() => handleAccordion()}>
           {openAccordion ? (

@@ -8,7 +8,7 @@ const Nav = ({ openAccordion, setOpenAccordion }) => {
     setOpenAccordion(!openAccordion);
   };
   return (
-    <nav className="flex bg-bgBody justify-between p-5 items-center fixed top-0 w-full z-50 lg:px-20 text-white">
+    <nav className="flex bg-bgBody justify-between p-5 items-center w-full z-50 text-white">
       <h2>
         <Link to="/" className="text-2xl font-semibold">
           BlockTalk

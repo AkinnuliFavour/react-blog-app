@@ -27,7 +27,7 @@ const SecurityList = () => {
   // console.log(console.log(Array.isArray(articles)))
   console.log(data)
   return (
-    <section className="text-center mt-8 p-4">
+    <section className="text-center mt-8 p-4 w-screen">
       <h3 className="text-3xl font-semibold">Security</h3>
       <p className="text-lg font-mono font-semibold text-gray-400">
         sint occaecat cupidatat non proident

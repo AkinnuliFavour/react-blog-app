@@ -1,5 +1,3 @@
-import React from "react";
-
 const BlockchainList = () => {
   return (
     <section className="text-center mt-8 p-4 md:flex md:flex-col">

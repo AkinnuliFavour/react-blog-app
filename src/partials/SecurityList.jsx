@@ -7,7 +7,7 @@ const SecurityList = () => {
   useEffect(() => {
     const fetchData = async() => {
       try {
-        const response = await axios.get('https://newsapi.org/v2/everything?q=crypto%20AND%20(blockchain)&apiKey=75e98f479be948cebad68ba962e010fe')
+        const response = await axios.get('https://newsapi.org/v2/everything?q=crypto%20AND%20(security)&apiKey=75e98f479be948cebad68ba962e010fe')
         const data = await response.data
         const securityData = data.articles
         console.log(securityData)
@@ -35,7 +35,8 @@ const SecurityList = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {data.map(article => 
           <section key={article.publishedAt} className="flex flex-col items-center gap-3 mt-8">
-            <div className= {`bg-[url(${article.urlToImage})] bg-cover bg-center h-96 mt-6 flex items-end justify-end`}>
+            <div className= "bg-cover bg-center h-96 mt-6 flex items-end justify-end" style={{backgroundImage: `url(${article.urlToImage})`}}>
+              {/* <img src={article.urlToImage} alt="" /> */}
               <div className="bg-bgBody opacity-80 p-8 h-3/6">
                 <h2 className="font-mono text-base text-center">
                   {article.title}

@@ -32,11 +32,10 @@ const SecurityList = () => {
       <p className="text-lg font-mono font-semibold text-gray-400">
         sint occaecat cupidatat non proident
       </p>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
         {data.map(article => 
           <section key={article.publishedAt} className="flex flex-col items-center gap-3 mt-8">
-            <div className= "bg-cover bg-center h-96 mt-6 flex items-end justify-end" style={{backgroundImage: `url(${article.urlToImage})`}}>
-              {/* <img src={article.urlToImage} alt="" /> */}
+            <div className= "bg-cover bg-center h-96 w-[400px] mt-6 flex items-end justify-end" style={{backgroundImage: `url(${article.urlToImage})`}}>
               <div className="bg-bgBody opacity-80 p-8 h-3/6">
                 <h2 className="font-mono text-base text-center">
                   {article.title}
@@ -44,7 +43,7 @@ const SecurityList = () => {
               </div>
             </div>
             <p className="p-2 px-4 bg-blue-800 text-center w-2/6">Security</p>
-            <p className="font-mono text-lg text-gray-300 line-clamp-2">
+            <p className="font-mono w-5/6 text-lg text-gray-300 line-clamp-2">
               {article.description}
             </p>
             <div className="flex items-center gap-2">
